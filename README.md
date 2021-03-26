@@ -1,1 +1,0 @@
-# Cognitya-Prototype

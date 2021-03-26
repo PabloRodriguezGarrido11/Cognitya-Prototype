@@ -927,6 +927,8 @@ section {
   transition: 0.3s;
 }
 
+
+
 .pricing .box:hover {
   transform: scale(1.1);
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
@@ -1011,6 +1013,8 @@ section {
   background: #4154f1;
   color: #fff;
 }
+
+
 
 /*--------------------------------------------------------------
 # F.A.Q
@@ -2400,4 +2404,5 @@ section {
 .training:hover p{
   color: #ffffff;
 }
+
 
