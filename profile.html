@@ -11,7 +11,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/Imagen1.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -26,9 +26,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/form.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
- 
 
   <!-- =======================================================
   * Template Name: FlexStart - v1.1.1
@@ -44,15 +42,18 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="user_home.html" class="logo d-flex align-items-center">
         <img src="assets/img/Imagen1.png" alt="">
-                <span>Cognitya</span>
+        <span>Cognitya</span>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="">Sobre nosotros</a></li>
+            <li><a class="nav-link scrollto active" href="profile.html">Perfil</a></li>
+            <li><a class="nav-link scrollto" href="activities.html">Actividades</a></li>
+            <li><a class="nav-link scrollto" href="entrenamiento.html">Entrenamiento</a></li>
+            <li><a class="nav-link scrollto" href="index.html">Cerrar sesión</a></li>
+
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -61,35 +62,88 @@
     </div>
   </header><!-- End Header -->
 
-  <div class="wrapper" data-aos="fade-up" >
-    <div class="title">Iniciar sesión</div>
-    <form action="Home.html">
-                <div class="field">
-                    <input type="text" required value="admin">
-                    <label>Correo electrónico</label>
-                </div>
-            <div class="field">
-                    <input type="password" required value="admin">
-                    <label>Contraseña</label>
-                </div>
-            <div class="content">
-                    <div class="checkbox">
-                    <input type="checkbox" id="remember-me">
-                    <label for="remember-me">Remember me</label>
-                    </div>
-            <div class="pass-link">
-            <a href="#">Forgot password?</a></div>
-            </div>
-            <div class="field">
-                    <input type="submit" value="Iniciar sesión">
-                </div>
-            <div class="signup-link">
-            Not a member? <a href="#">Signup now</a></div>
-    </form>
-</div>
 
+  <section id="about" class="about" style="position: relative; top:50px;">
+    <div class="container">
 
+        <form>
+            <fieldset>
+              <legend>Plácido Macías Román</legend>
+              
+              <div class="form-group">
+                <label for="exampleInputEmail1">Nombre:</label>
+                <input type="text" class="form-control" disabled value="Plácido">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Apellidos:</label>
+                <input type="text" class="form-control" disabled value="Román Gómez">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Edad:</label>
+                <input type="text" class="form-control" disabled value="68">
+              </div>
+
+             
+     
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
   
+          <div class="row gy-4">
+  
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-emoji-smile"></i>
+                <div>
+                  <span data-purecounter-start="500" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Entrenamientos realizados</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
+                <div>
+                  <span data-purecounter-start="500" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Entremientos pendientes</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-emoji-smile"></i>
+                <div>
+                  <span data-purecounter-start="500" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Actividades Realizadas</p>
+                </div>
+              </div>
+            </div>
+  
+           
+  
+        </div>
+      </section><!-- End Counts Section -->
+  
+           
+             
+          </form>
+
+    </div>
+  </section><!-- End About Section -->
+    
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- End Pricing Section -->
+
+
+
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
@@ -121,6 +175,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+ 
+
+
+  
+  
+  
+  
 
 </body>
 

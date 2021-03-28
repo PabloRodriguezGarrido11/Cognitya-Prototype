@@ -4,6 +4,11 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+
+
+
+
 (function() {
   "use strict";
 
@@ -194,12 +199,17 @@
   /**
    * Porfolio isotope and filter
    */
+
+
+  
+
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        filter: '.opcion-1',
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);
@@ -216,9 +226,13 @@
         });
         aos_init();
       }, true);
+
+      
     }
 
   });
+
+ 
 
   /**
    * Initiate portfolio lightbox 
