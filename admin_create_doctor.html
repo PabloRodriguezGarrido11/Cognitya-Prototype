@@ -33,12 +33,10 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-
+ 
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets_profile/css/style.css" rel="stylesheet">
-
-
   <!-- =======================================================
   * Template Name: MyResume - v2.2.1
   * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
@@ -57,43 +55,69 @@
 
     <nav class="nav-menu">
       <ul>
-        <li class="active"><a href="doctor_home.html"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
-        <li><a href="patients.html"><i class="bx bx-user"></i> <span>Pacientes</span></a></li>
-        <li><a href="doctor_entrenamiento_list.html"><i class="bx bx-file-blank"></i> <span>Entrenamientos</span></a></li>
+        <li class="active"><a href="admin_home.html"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
+        <li><a href="admin_users.html"><i class="bx bx-user"></i> <span>Usuarios</span></a></li>
+        
         <li><a href="index.html"><i class="bx bi-arrow-right"></i> <span>Cerrar Sesión</span></a></li>
+
 
       </ul>
     </nav><!-- .nav-menu -->
 
   </header><!-- End Header -->
 
-  
+ 
+
 
   <main id="main">
-    <section id="about" class="about" data-aos="fade-up" >
+    <section id="admin"  style="position: relative; ">
         <div class="container">
     
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Nombre Paciente</th>
-                    <th scope="col">Edad</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Plácido Macías Román</th>
-                    <td>68 años</td>
-                    <td><a href="expediente.html"class="btn btn-outline-primary">Expediente</a></td>
-                  </tr>
-                </tbody>
-              </table>
+            <form>
+                <fieldset>
+                  <legend>Daniel Carrasco Gómez</legend>
+                  
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Nombre de usuario:</label>
+                    <input type="text" class="form-control"  value="dacago">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Nombre:</label>
+                    <input type="text" class="form-control"  value="Daniel">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Apellidos:</label>
+                    <input type="text" class="form-control"  value="Carrasco Gómez">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleTextarea">Especialidad</label>
+                    <input class="form-control"  value="Neurología" ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Edad:</label>
+                    <input type="text" class="form-control"  value="21">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Fecha de nacimiento:</label>
+                    <input type="text" class="form-control"  value="3/10/1999">
+                  </div>
+                 
+                 
+                 
+                  <div class="form-group">
+                    <label for="exampleTextarea">Observaciones</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3" ></textarea>
+                  </div>
+                  <td><a href="admin_doctor_detail.html"class="btn btn-outline-primary">Confirmar</a></td>           
+
+                 
+              </form>
     
         </div>
-      </section><!-- End About Section -->
     
-   
+    </section>
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -129,12 +153,12 @@
   <script src="assets_profile/vendor/typed.js/typed.min.js"></script>
   <script src="assets_profile/vendor/aos/aos.js"></script>
 
-   <!-- Template Main JS File -->
-   <script src="assets_profile/js/main.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets_profile/js/main.js"></script>
 
 
 
-
+   
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>

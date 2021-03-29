@@ -31,7 +31,7 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw==" crossorigin="anonymous"></script>
   <!-- Template Main CSS File -->
  
   <link href="assets/css/style.css" rel="stylesheet">
@@ -57,8 +57,8 @@
       <ul>
         <li class="active"><a href="doctor_home.html"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
         <li><a href="patients.html"><i class="bx bx-user"></i> <span>Pacientes</span></a></li>
-        <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Entrenamientos</span></a></li>
-        <li><a href="index.html"><i class="bx bxs-quote-alt-right"></i> <span>Cerrar Sesión</span></a></li>
+        <li><a href="doctor_entrenamiento_list.html"><i class="bx bx-file-blank"></i> <span>Entrenamientos</span></a></li>
+        <li><a href="index.html"><i class="bx bi-arrow-right"></i> <span>Cerrar Sesión</span></a></li>
 
       </ul>
     </nav><!-- .nav-menu -->
@@ -68,63 +68,217 @@
 
 
   <main id="main">
-    <section id="about" class="about" style="position: relative; bottom: 100px;">
-   
+    
+    <section id="portfolio" class="portfolio"  style="position: relative; top: 30px;">
 
-        <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+  
+       
+  
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter=".opcion-1" class="filter-active" >Diario</li>
+              <li data-filter=".opcion-2">Semanal</li>
+              <li data-filter=".opcion-3">Mensual</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="row gy-4 portfolio-container"  data-aos="fade-right"  data-aos-delay="200" style="position: relative; bottom: 180px;">
+  
+          <!-- Diario -->
 
-            <div class="container" data-aos="fade-down">
-        
-              <header class="section-header">
-               
-                <h5>Selecciona una fecha</h5>
-              </header>
-        
-              <div class="row gy-4" data-aos="fade-up" >        
-                <div  data-aos="zoom-in" data-aos-delay="100">
-                  <div class="box">
-
-
-                  <input type="date" class="" value="2021-03-25">
-
-                
-                  </div>
-                </div>
-        
-              
-        
-              </div>
-        
-            </div>
-        
-          </section>
-
-          <section id="pricing" class="pricing" style="position: relative; bottom:200px;">
-
-            <div class="container" data-aos="fade-down">
-        
-              <header class="section-header">
-               
-                <h5>Resultado entrenamiento</h5>
-              </header>
-        
-              <div class="row gy-4" data-aos="fade-up">
-        
-                <div  data-aos="zoom-in" data-aos-delay="100">
-                  <div class="box">
+            <section id="pricing" class="pricing portfolio-item filter-web  opcion-1" style="margin-bottom: -200px; ">
+    
+                <div class="container" data-aos="fade-down">
+            
+                  <header class="section-header">
+                  
+                    <h5>Selecciona una fecha</h5>
+                  </header>
+            
+                  <div class="row gy-4" data-aos="fade-up" >        
+                    <div  data-aos="zoom-in" data-aos-delay="100">
+                      <div class="box">
+    
+    
+                      <input type="date" class="" value="2021-03-25">
+    
                     
+                      </div>
+                    </div>
+            
+                  
+            
                   </div>
+            
                 </div>
+                
+            </section>
+
+
+                                 
+            <section id="pricing" class="pricing portfolio-item filter-web opcion-1" >
+    
+              <div class="container" data-aos="fade-down"  >
+          
+                <header class="section-header">
+                
+                  <h5>Resultado del entrenamiento</h5>
+                </header>
+          
+                <div class="row gy-4" data-aos="fade-up" >        
+                  <div  data-aos="zoom-in" data-aos-delay="50">
+                    <div class="box">
+
+                      <form>
+
+                        <fieldset>
+                          <legend>Daniel Carrasco Gómez</legend>
+                          
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Nombre de usuario:</label>
+                            <input type="text" class="form-control"  value="dacago">
+                          </div>
         
-              
-        
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Nombre:</label>
+                            <input type="text" class="form-control"  value="Daniel">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Apellidos:</label>
+                            <input type="text" class="form-control"  value="Carrasco Gómez">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleTextarea">Especialidad</label>
+                            <input class="form-control"  value="Neurología" ></textarea>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Edad:</label>
+                            <input type="text" class="form-control"  value="21">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Fecha de nacimiento:</label>
+                            <input type="text" class="form-control"  value="3/10/1999">
+                          </div>
+
+                         
+                      </form>                  
+                    </div>
+                  </div>
+
+          
+                </div>
+          
               </div>
-        
+              
+          </section>
+          
+          
+
+
+
+
+
+      <!-- Semanal -->
+
+   
+      <section id="pricing" class="pricing portfolio-item filter-web  opcion-2" style="margin-bottom: -200px;">
+    
+        <div class="container" data-aos="fade-down">
+    
+          <header class="section-header">
+          
+            <h5>Selecciona una fecha</h5>
+          </header>
+    
+          <div class="row gy-4" data-aos="fade-up" >        
+            <div  data-aos="zoom-in" data-aos-delay="100">
+              <div class="box">
+
+                <div class="chart-container" >
+                  <canvas id="myChart1" ></canvas>
+              </div>
+
+            
+              </div>
             </div>
+    
+          
+    
+          </div>
+    
+        </div>
         
-          </section><!-- End Pricing Section -->
-    </div>
-  </section><!-- End About Section -->
+    </section>
+
+
+    <section id="pricing" class="pricing portfolio-item filter-web  opcion-2" ">
+    
+      <div class="container" data-aos="fade-down">
+  
+        <header class="section-header">
+        
+          <h5>Selecciona una fecha</h5>
+        </header>
+  
+        <div class="row gy-4" data-aos="fade-up" >        
+          <div  data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+
+              <div class="chart-container" >
+                <canvas id="myChart2" ></canvas>
+            </div>
+
+          
+            </div>
+          </div>
+  
+        
+  
+        </div>
+  
+      </div>
+      
+    </section>
+
+
+
+
+
+
+
+
+
+      <!-- Mensual -->
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+  
+      </div>
+  
+    </section><!-- End Portfolio Section -->
+
+
+   
    
   </main><!-- End #main -->
 
@@ -164,6 +318,8 @@
   <!-- Template Main JS File -->
   <script src="assets_profile/js/main.js"></script>
 
+  <script src="assets_profile/js/charts.js"></script>
+
 
 
    
@@ -179,7 +335,6 @@
   
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
 
 </body>
 

@@ -58,7 +58,7 @@
         <li class="active"><a href="admin_home.html"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
         <li><a href="admin_users.html"><i class="bx bx-user"></i> <span>Usuarios</span></a></li>
         
-        <li><a href="index.html"><i class="bx bxs-quote-alt-right"></i> <span>Cerrar Sesión</span></a></li>
+        <li><a href="index.html"><i class="bx bi-arrow-right"></i> <span>Cerrar Sesión</span></a></li>
 
       </ul>
     </nav><!-- .nav-menu -->
@@ -70,24 +70,31 @@
 
   <main id="main">
     <section id="admin"  style="position: relative; ">
+   
         <div class="container">
     
             <table class="table">
                 <thead>
                   <tr>
-                    <th scope="col">Nombre Paciente</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apelidos</th>
                     <th scope="col">Edad</th>
                     <th scope="col">Acción</th>
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">Plácido Macías Román</th>
+                    <td>Plácido</td>
+                    <td>Macías Román</td>
                     <td>68 años</td>
                     <td><a href="admin_patient_detail.html"class="btn btn-outline-primary">Editar</a> <a href="admin_patient_delete.html"class="btn btn-outline-primary">Eliminar</a></td>
                   </tr>
               
-               
+                    <tr>              
+                        <a href="admin_create_patient.html"class="btn btn-outline-primary" style="position: relative; bottom: 20px; ">Crear nuevo paciente</a> 
+                    </tr>
+                  
                
                
                 </tbody>
