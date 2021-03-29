@@ -60,6 +60,8 @@ var comparativaSemanal = new Chart(comparativaSemanal, {
     ]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio:false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -127,6 +129,8 @@ var comparativaSemana2 = new Chart(comparativaSemana2, {
     ]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio:false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -150,7 +154,7 @@ var testSemanal = new Chart(testSemanal, {
     data: {
         labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4', 'Día 5', 'Día 6' ,'Día 7'],
         datasets: [{
-            label: 'Puntos obtenidos por día',
+            label: 'Puntos por día',
             data: [8,5,7,6,8,6,7],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -171,6 +175,8 @@ var testSemanal = new Chart(testSemanal, {
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio:false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -240,6 +246,8 @@ var comparativaMensual1 = new Chart(comparativaMensual1, {
     ]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio:false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -307,6 +315,8 @@ var comparativaMensual2 = new Chart(comparativaMensual2, {
     ]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio:false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -330,7 +340,7 @@ var testMensual = new Chart(testMensual, {
     data: {
         labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'],
         datasets: [{
-            label: 'Puntos obtenidos por semana',
+            label: 'Puntos por semana',
             data: [10,11,12,13],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -351,6 +361,8 @@ var testMensual = new Chart(testMensual, {
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio:false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -395,6 +407,8 @@ var memoria = new Chart(memoria, {
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio:false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -431,6 +445,8 @@ var atencion = new Chart(atencion, {
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio:false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -465,6 +481,8 @@ var percepcion = new Chart(percepcion, {
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio:false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -500,6 +518,8 @@ var calculo = new Chart(calculo, {
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio:false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -533,6 +553,8 @@ var lenguaje = new Chart(lenguaje, {
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio:false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -551,7 +573,7 @@ var test = new Chart(test, {
     data: {
         labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4'],
         datasets: [{
-            label: 'Puntos obtenidos por pregunta',
+            label: 'Puntos por pregunta',
             data: [1, 3, 2, 2],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -572,6 +594,8 @@ var test = new Chart(test, {
         }]
     },
     options: {
+        responsive: true,
+        maintainAspectRatio:false,
         scales: {
             yAxes: [{
                 ticks: {
